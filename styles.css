@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+:root {
+  --primary-color: #a306b6;
+  --articles-color: #d9d9d9;
+  --font-title: "Montserrat";
+  --font-paragraph: "Source sans 3";
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: var(--font-title);
+  color: white;
+  font-size: 4rem;
+  width: 600px;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--font-title);
+  color: var(--primary-color);
+}
+
+h3 {
+  font-family: var(--font-title);
+}
+
+p {
+  font-family: var(--font-paragraph);
+}
+
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  min-height: 50%;
+}
+
+nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+}
+
+nav>img {
+  width: 5rem;
+}
+
+nav>ul {
+  width: 25%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+header>section {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+header>section>img {
+  height: 15rem;
+  border: white 2px solid;
+  border-radius: 15rem;
+  padding: 0;
+}
+
+main {
+  max-width: 33%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.article-img {
+  min-height: 75%;
+  max-width: 90% ;
+  min-width: 75%;
+}
+
+article {
+  background-color: var(--articles-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.recent-articles {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  width: 4rem;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: white;
+  font-size: 0.5rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background-color: var(--articles-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+  nav, header>section,.recent-articles {
+    flex-direction: column;
+    gap: 20px;
+  }
+  nav {
+    align-items: center;
+  }
+
+  header>section>img {
+    height: 10rem;
+  }
+}
