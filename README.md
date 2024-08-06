@@ -12,7 +12,7 @@ Fonctionnalités
 Installation
   Pour visualiser le projet en local, il suffit de cloner le dépôt et d'ouvrir le fichier index.html dans un navigateur web.
   Cloner le dépôt
-    git clone https://github.com/ton-utilisateur/nom-du-repo.git
+    git clone git@github.com:Agraheris/wcs-HTML-CSS-1-Bienvenue-bord.git
 
 Structure du Projet
   index.html : Le fichier HTML principal contenant la structure de la page.
